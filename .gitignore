@@ -9,7 +9,7 @@ build/
 out/
 
 # Environment variables
-.env
+# .env (included for demo purposes)
 .env.local
 .env.production
 .env.*.local

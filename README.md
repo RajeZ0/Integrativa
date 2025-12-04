@@ -17,13 +17,34 @@ METZLI/
 └─ README.md       # este archivo
 ```
 
-## Requisitos previos
+## 🐳 Instalación Rápida con Docker (Recomendado)
+
+### Requisitos previos
+- **Docker Desktop** instalado y corriendo
+
+### Ejecutar con un solo comando
+```bash
+docker-compose up --build
+```
+
+Eso es todo! 🎉 El proyecto estará disponible en:
+- **Frontend:** http://localhost:3000
+- **Backend API:** http://localhost:8000
+
+Para detener los servicios:
+```bash
+docker-compose down
+```
+
+---
+
+## 📦 Instalación Manual (Alternativa)
+
+### Requisitos previos
 - **PHP 8.2** o superior
 - **Composer** (gestor de dependencias de PHP)
 - **Node.js** y **npm** (para el frontend)
 - **SQLite** (ya viene incluido con PHP)
-
-## Instalación y ejecución
 
 ### 1. Backend (Laravel)
 Abre una terminal y ejecuta:
