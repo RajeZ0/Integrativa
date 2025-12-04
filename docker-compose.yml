@@ -10,8 +10,9 @@ services:
       - "8000:8000"
     volumes:
       - ./backend:/var/www/backend
-      - backend-storage:/var/www/backend/storage
-      - backend-database:/var/www/backend/database
+      - /var/www/backend/vendor
+      - /var/www/backend/storage
+      - /var/www/backend/database
     environment:
       - APP_ENV=local
       - APP_DEBUG=true
@@ -43,7 +44,3 @@ services:
 networks:
   metzli-network:
     driver: bridge
-
-volumes:
-  backend-storage:
-  backend-database:
